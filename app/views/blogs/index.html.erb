@@ -51,6 +51,7 @@
         $('#blogs-datatable').dataTable({
             "processing": true,
             "serverSide": true,
+            columnDefs: [{ orderable: false, "targets": -1 }],
             "ajax": $('#blogs-datatable').data('source'),
             "pagingType": "full_numbers",
             "columns": [
