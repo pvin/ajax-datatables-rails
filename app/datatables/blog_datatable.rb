@@ -9,7 +9,7 @@ class BlogDatatable < AjaxDatatablesRails::ActiveRecord
       id:          { source: "Blog.id" },
       title:       { source: "Blog.title" },
       description: { source: "Blog.description" },
-      comments:    { source: "Blog.comments" },
+      comments:    { source: "Blog.comments", searchable: false },
       tag:         { source: "Blog.tag" },
     }
   end
